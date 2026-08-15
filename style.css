@@ -128,3 +128,186 @@ footer {
   .hours { margin-top: 30px; }
   .hero-content { margin-top: 60px; }
 }
+
+.section-heading { margin-bottom: 30px; }
+.section-heading p { color: #667085; max-width: 620px; }
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+.product-card {
+  overflow: hidden;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(16,24,40,.07);
+}
+.product-art {
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+}
+.drinks-art {
+  background: linear-gradient(145deg, #dff7ff, #b9e8ff);
+}
+.can, .bottle, .chips-bag, .wine-bottle, .wine-glass {
+  position: absolute;
+  display: block;
+}
+.can {
+  width: 58px;
+  height: 145px;
+  border-radius: 12px 12px 16px 16px;
+  background: linear-gradient(90deg, #d9d9d9, #fff, #bdbdbd);
+  bottom: 38px;
+}
+.can::after {
+  content: "COLA";
+  position: absolute;
+  left: 7px;
+  right: 7px;
+  top: 48px;
+  padding: 4px 0;
+  text-align: center;
+  background: #172033;
+  color: white;
+  font-size: 9px;
+  font-weight: 900;
+  border-radius: 5px;
+}
+.can-one { left: 32%; transform: rotate(-8deg); }
+.can-two { left: 50%; transform: rotate(9deg); height: 135px; }
+.bottle {
+  width: 48px;
+  height: 150px;
+  right: 18%;
+  bottom: 34px;
+  border-radius: 14px 14px 9px 9px;
+  background: linear-gradient(90deg, #70c68b, #d8f3a4, #4b9f6b);
+}
+.bottle::before {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 28px;
+  left: 13px;
+  top: -20px;
+  border-radius: 5px 5px 2px 2px;
+  background: #4d6b5a;
+}
+.ice { position: absolute; font-size: 42px; right: 12%; top: 25px; color: white; }
+
+.chips-art {
+  background: linear-gradient(145deg, #fff1c9, #ffd86e);
+}
+.chips-bag {
+  width: 125px;
+  height: 165px;
+  left: 50%;
+  top: 42px;
+  transform: translateX(-50%) rotate(-5deg);
+  border-radius: 14px 14px 22px 22px;
+  background: linear-gradient(90deg, #f6b500, #ffe082, #e49d00);
+  box-shadow: 0 12px 20px rgba(0,0,0,.12);
+}
+.chips-bag::before {
+  content: "CHIPS";
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  top: 50px;
+  padding: 10px 4px;
+  text-align: center;
+  border-radius: 8px;
+  background: white;
+  color: #d98b00;
+  font-weight: 900;
+  font-size: 20px;
+}
+.chip {
+  position: absolute;
+  width: 43px;
+  height: 32px;
+  border-radius: 50%;
+  background: #e8a72e;
+  box-shadow: inset 3px 2px 0 rgba(255,255,255,.45);
+}
+.chip-a { left: 18%; bottom: 30px; transform: rotate(22deg); }
+.chip-b { right: 16%; bottom: 48px; transform: rotate(-18deg); }
+.chip-c { left: 39%; bottom: 20px; transform: rotate(7deg); }
+
+.alcohol-art {
+  background: linear-gradient(145deg, #efe6ff, #d9c1f4);
+}
+.wine-bottle {
+  width: 57px;
+  height: 150px;
+  left: 34%;
+  bottom: 32px;
+  border-radius: 10px 10px 16px 16px;
+  background: linear-gradient(90deg, #4b174c, #8b3c7f, #3b123b);
+}
+.wine-bottle::before {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 35px;
+  left: 17px;
+  top: -28px;
+  background: #35132f;
+  border-radius: 4px 4px 1px 1px;
+}
+.bottle-label {
+  position: absolute;
+  left: 8px;
+  right: 8px;
+  top: 62px;
+  background: #f8e8c5;
+  color: #4b174c;
+  text-align: center;
+  font-size: 8px;
+  font-weight: 900;
+  padding: 8px 0;
+}
+.wine-glass {
+  width: 74px;
+  height: 88px;
+  right: 25%;
+  top: 72px;
+  border: 4px solid rgba(255,255,255,.85);
+  border-top: 0;
+  border-radius: 0 0 36px 36px;
+}
+.wine-glass::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 7px;
+  height: 38px;
+  border-radius: 0 0 25px 25px;
+  background: #9a3158;
+}
+.wine-glass::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 54px;
+  background: white;
+  left: 31px;
+  top: 84px;
+  box-shadow: -17px 50px 0 -1px white, 17px 50px 0 -1px white;
+}
+.product-info { padding: 22px 24px 25px; }
+.product-info h3 { margin: 0 0 7px; font-size: 21px; }
+.product-info p { margin: 0; color: #667085; }
+.legal-note {
+  margin-top: 24px;
+  text-align: center;
+  color: #667085;
+  font-size: 13px;
+}
+@media (max-width: 760px) {
+  .product-grid { grid-template-columns: 1fr; }
+}
