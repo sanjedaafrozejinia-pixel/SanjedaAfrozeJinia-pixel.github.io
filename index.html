@@ -1,132 +1,51 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Alimentación y Locutorio en Calle Lavapiés 5, Madrid. Food & beverage y servicios de locutorio. Abierto 24 horas.">
-  <title>Alimentación y Locutorio | Madrid</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Alimentación y Locutorio en Calle Lavapiés 5, Madrid. Food & Beverage y servicios de locutorio. Abierto 24 horas.">
+<title>Alimentación y Locutorio | Madrid</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="hero">
-    <nav class="nav">
-      <div class="logo">Alimentación y Locutorio</div>
-      <a class="nav-btn" href="tel:+34602470301">Llamar</a>
-    </nav>
+<header class="hero">
+<nav class="nav"><div class="logo">Alimentación y Locutorio</div><a class="nav-btn" href="tel:+34602470301">Llamar</a></nav>
+<div class="hero-content">
+<span class="badge">ABIERTO 24 HORAS</span>
+<h1>Alimentación y Locutorio</h1>
+<p>Food & Beverage y servicios de locutorio en el corazón de Madrid.</p>
+<div class="buttons"><a class="btn primary" href="https://wa.me/34602470301" target="_blank">WhatsApp</a><a class="btn secondary" href="https://www.google.com/maps/search/?api=1&query=Calle+Lavapi%C3%A9s+5%2C+Madrid%2C+Spain" target="_blank">Cómo llegar</a></div>
+</div>
+</header>
 
-    <div class="hero-content">
-      <span class="badge">ABIERTO 24 HORAS</span>
-      <h1>Alimentación y Locutorio</h1>
-      <p>Food & Beverage y servicios de locutorio en el corazón de Madrid.</p>
-      <div class="buttons">
-        <a class="btn primary" href="https://wa.me/34602470301" target="_blank" rel="noopener">WhatsApp</a>
-        <a class="btn secondary" href="https://www.google.com/maps/search/?api=1&query=Calle+Lavapi%C3%A9s+5%2C+Madrid%2C+Spain" target="_blank" rel="noopener">Cómo llegar</a>
-      </div>
-    </div>
-  </header>
+<main>
+<section class="section">
+<span class="eyebrow">NUESTROS PRODUCTOS</span>
+<h2>Elige una categoría</h2>
+<p class="intro">Toca una categoría para ver algunos de nuestros productos.</p>
+<div class="category-grid">
+<button class="category-card" data-gallery="drinks"><span class="category-image"><img src="assets/cold-drinks.jpg" alt="Bebidas frías"></span><span><strong>🥤 Cold Drinks</strong><small>Ver bebidas</small></span></button>
+<button class="category-card" data-gallery="chips"><span class="category-image"><img src="assets/chips-snacks.jpg" alt="Chips y snacks"></span><span><strong>🍟 Chips & Snacks</strong><small>Ver snacks</small></span></button>
+<button class="category-card" data-gallery="alcohol"><span class="category-image"><img src="assets/alcoholic-drinks.jpg" alt="Bebidas alcohólicas"></span><span><strong>🍷 Alcohol</strong><small>Ver bebidas alcohólicas</small></span></button>
+</div>
+<div id="gallery" class="gallery" hidden>
+<div class="gallery-head"><div><span class="eyebrow">PRODUCTOS</span><h3 id="galleryTitle"></h3></div><button id="closeGallery" class="close-btn" aria-label="Cerrar">×</button></div>
+<div id="galleryItems" class="gallery-grid"></div>
+</div>
+<p class="legal-note">Venta de alcohol exclusivamente a mayores de 18 años y conforme a la normativa aplicable.</p>
+</section>
 
-  <main>
-    <section class="section">
-      <h2>Lo que ofrecemos</h2>
-      <div class="cards">
-        <article class="card">
-          <div class="icon">🥤</div>
-          <h3>Food & Beverage</h3>
-          <p>Productos de alimentación y bebidas para tus compras del día a día.</p>
-        </article>
-        <article class="card">
-          <div class="icon">📱</div>
-          <h3>Locutorio</h3>
-          <p>Servicios de comunicación y locutorio para tus necesidades.</p>
-        </article>
-        <article class="card">
-          <div class="icon">🕐</div>
-          <h3>24 horas</h3>
-          <p>Estamos abiertos las 24 horas para ofrecerte mayor comodidad.</p>
-        </article>
-      </div>
-    </section>
+<section class="section dark">
+<div><span class="eyebrow">VISÍTANOS</span><h2>Estamos en Lavapiés</h2><p>Calle Lavapiés 5, Madrid, España</p><a class="btn primary" href="https://www.google.com/maps/search/?api=1&query=Calle+Lavapi%C3%A9s+5%2C+Madrid%2C+Spain" target="_blank">Abrir Google Maps</a></div>
+<div class="hours"><span>HORARIO</span><strong>24 horas · Todos los días</strong></div>
+</section>
 
-
-    <section class="section products">
-      <div class="section-heading">
-        <span class="eyebrow">NUESTROS PRODUCTOS</span>
-        <h2>Food & Beverage</h2>
-        <p>Una selección de productos para tus compras rápidas, todos los días.</p>
-      </div>
-
-      <div class="product-grid">
-        <article class="product-card">
-          <div class="product-art drinks-art" aria-label="Ilustración de bebidas frías">
-            <span class="can can-one"></span>
-            <span class="can can-two"></span>
-            <span class="bottle"></span>
-            <span class="ice">✦</span>
-          </div>
-          <div class="product-info">
-            <h3>🥤 Bebidas frías</h3>
-            <p>Refrescos, agua, zumos y otras bebidas frías.</p>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <div class="product-art chips-art" aria-label="Ilustración de patatas fritas">
-            <span class="chips-bag"></span>
-            <span class="chip chip-a"></span>
-            <span class="chip chip-b"></span>
-            <span class="chip chip-c"></span>
-          </div>
-          <div class="product-info">
-            <h3>🍟 Snacks & Chips</h3>
-            <p>Patatas, snacks y productos para picar.</p>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <div class="product-art alcohol-art" aria-label="Ilustración de bebidas alcohólicas">
-            <span class="wine-bottle"></span>
-            <span class="wine-glass"></span>
-            <span class="bottle-label">WINE</span>
-          </div>
-          <div class="product-info">
-            <h3>🍷 Bebidas alcohólicas</h3>
-            <p>Selección de bebidas alcohólicas disponible en tienda para mayores de 18 años.</p>
-          </div>
-        </article>
-      </div>
-
-      <p class="legal-note">Venta de alcohol exclusivamente a mayores de 18 años y conforme a la normativa aplicable.</p>
-    </section>
-
-    <section class="section dark">
-      <div>
-        <span class="eyebrow">VISÍTANOS</span>
-        <h2>Estamos en Lavapiés</h2>
-        <p>Calle Lavapiés 5, Madrid, España</p>
-        <a class="btn primary" href="https://www.google.com/maps/search/?api=1&query=Calle+Lavapi%C3%A9s+5%2C+Madrid%2C+Spain" target="_blank" rel="noopener">Abrir Google Maps</a>
-      </div>
-      <div class="hours">
-        <span>HORARIO</span>
-        <strong>24 horas · Todos los días</strong>
-      </div>
-    </section>
-
-    <section class="section contact">
-      <h2>Contacta con nosotros</h2>
-      <p>¿Necesitas información? Llámanos o escríbenos por WhatsApp.</p>
-      <a class="phone" href="tel:+34602470301">+34 602 470 301</a>
-      <div class="buttons">
-        <a class="btn primary" href="tel:+34602470301">Llamar ahora</a>
-        <a class="btn whatsapp" href="https://wa.me/34602470301" target="_blank" rel="noopener">Escribir por WhatsApp</a>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2026 Alimentación y Locutorio · Madrid</p>
-    <p>Calle Lavapiés 5 · Abierto 24 horas</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+<section class="section contact">
+<h2>Contacta con nosotros</h2><p>¿Necesitas información? Llámanos o escríbenos por WhatsApp.</p>
+<a class="phone" href="tel:+34602470301">+34 602 470 301</a>
+<div class="buttons"><a class="btn primary" href="tel:+34602470301">Llamar ahora</a><a class="btn whatsapp" href="https://wa.me/34602470301" target="_blank">Escribir por WhatsApp</a></div>
+</section>
+</main>
+<footer><p>© 2026 Alimentación y Locutorio · Madrid</p><p>Calle Lavapiés 5 · Abierto 24 horas</p></footer>
+<script src="script.js"></script>
+</body></html>
