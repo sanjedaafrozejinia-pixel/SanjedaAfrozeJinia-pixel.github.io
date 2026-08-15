@@ -1,0 +1,130 @@
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #172033;
+  background: #f7f8fb;
+  line-height: 1.6;
+}
+.hero {
+  min-height: 620px;
+  background: linear-gradient(135deg, #101828 0%, #233b63 55%, #0b8f6a 100%);
+  color: white;
+}
+.nav {
+  max-width: 1100px;
+  margin: auto;
+  padding: 22px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo { font-size: 20px; font-weight: 800; }
+.nav-btn {
+  color: white;
+  text-decoration: none;
+  border: 1px solid rgba(255,255,255,.5);
+  padding: 9px 16px;
+  border-radius: 999px;
+}
+.hero-content {
+  max-width: 1100px;
+  margin: 90px auto 0;
+  padding: 0 24px;
+}
+.badge {
+  display: inline-block;
+  background: #17b77d;
+  padding: 7px 13px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .08em;
+}
+h1 {
+  max-width: 780px;
+  font-size: clamp(42px, 8vw, 78px);
+  line-height: 1.02;
+  margin: 22px 0;
+}
+.hero-content p { max-width: 650px; font-size: 20px; color: #d9e1ee; }
+.buttons { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 26px; }
+.btn {
+  display: inline-block;
+  padding: 13px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 800;
+}
+.primary { background: #17b77d; color: white; }
+.secondary { background: white; color: #172033; }
+.whatsapp { background: #25d366; color: white; }
+.section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 80px 24px;
+}
+.section h2 { font-size: 38px; line-height: 1.15; margin-top: 0; }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.card {
+  background: white;
+  padding: 28px;
+  border-radius: 18px;
+  box-shadow: 0 8px 30px rgba(16,24,40,.07);
+}
+.icon { font-size: 38px; }
+.card h3 { font-size: 22px; margin-bottom: 8px; }
+.card p { color: #667085; }
+.dark {
+  max-width: none;
+  padding-left: max(24px, calc((100% - 1100px) / 2));
+  padding-right: max(24px, calc((100% - 1100px) / 2));
+  background: #101828;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: center;
+}
+.dark p { color: #c8d0dc; }
+.eyebrow, .hours span {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .12em;
+  color: #17b77d;
+}
+.hours {
+  min-width: 270px;
+  padding: 25px;
+  border: 1px solid #344054;
+  border-radius: 16px;
+}
+.hours strong { display: block; margin-top: 8px; }
+.contact { text-align: center; }
+.phone {
+  display: block;
+  color: #0b8f6a;
+  font-size: 30px;
+  font-weight: 900;
+  text-decoration: none;
+  margin: 15px 0;
+}
+.contact .buttons { justify-content: center; }
+footer {
+  background: #080d16;
+  color: #98a2b3;
+  text-align: center;
+  padding: 28px 20px;
+  font-size: 14px;
+}
+@media (max-width: 760px) {
+  .cards { grid-template-columns: 1fr; }
+  .dark { display: block; }
+  .hours { margin-top: 30px; }
+  .hero-content { margin-top: 60px; }
+}
