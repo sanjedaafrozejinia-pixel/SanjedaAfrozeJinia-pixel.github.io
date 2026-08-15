@@ -1,51 +1,33 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Alimentación y Locutorio en Calle Lavapiés 5, Madrid. Food & Beverage y servicios de locutorio. Abierto 24 horas.">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Alimentación y Locutorio | Madrid</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="hero">
-<nav class="nav"><div class="logo">Alimentación y Locutorio</div><a class="nav-btn" href="tel:+34602470301">Llamar</a></nav>
-<div class="hero-content">
-<span class="badge">ABIERTO 24 HORAS</span>
-<h1>Alimentación y Locutorio</h1>
-<p>Food & Beverage y servicios de locutorio en el corazón de Madrid.</p>
-<div class="buttons"><a class="btn primary" href="https://wa.me/34602470301" target="_blank">WhatsApp</a><a class="btn secondary" href="https://www.google.com/maps/search/?api=1&query=Calle+Lavapi%C3%A9s+5%2C+Madrid%2C+Spain" target="_blank">Cómo llegar</a></div>
-</div>
+<header class="header">
+  <div class="top">
+    <div class="brand">🛒 <div><b>ALIMENTACIÓN</b><strong> Y LOCUTORIO</strong><small>Tu tienda de confianza en Madrid</small></div></div>
+    <div class="info"><span>📍 <b>Calle Lavapiés 5</b><small>Madrid, España</small></span><span>📞 <b>+34 602 470 301</b><small>WhatsApp disponible</small></span><span>🕐 <b>24 HORAS</b><small>Todos los días</small></span></div>
+  </div>
+  <nav><a href="#inicio">🏠 INICIO</a><a href="#productos">🛍️ ALIMENTOS Y BEBIDAS</a><a href="#locutorio">📱 LOCUTORIO</a><a href="#ubicacion">📍 UBICACIÓN</a><a href="#contacto">📞 CONTACTO</a><a class="wa" href="https://wa.me/34602470301" target="_blank">WhatsApp</a></nav>
 </header>
 
-<main>
-<section class="section">
-<span class="eyebrow">NUESTROS PRODUCTOS</span>
-<h2>Elige una categoría</h2>
-<p class="intro">Toca una categoría para ver algunos de nuestros productos.</p>
-<div class="category-grid">
-<button class="category-card" data-gallery="drinks"><span class="category-image"><img src="assets/cold-drinks.jpg" alt="Bebidas frías"></span><span><strong>🥤 Cold Drinks</strong><small>Ver bebidas</small></span></button>
-<button class="category-card" data-gallery="chips"><span class="category-image"><img src="assets/chips-snacks.jpg" alt="Chips y snacks"></span><span><strong>🍟 Chips & Snacks</strong><small>Ver snacks</small></span></button>
-<button class="category-card" data-gallery="alcohol"><span class="category-image"><img src="assets/alcoholic-drinks.jpg" alt="Bebidas alcohólicas"></span><span><strong>🍷 Alcohol</strong><small>Ver bebidas alcohólicas</small></span></button>
+<section class="hero" id="inicio"><div><em>ABIERTO 24 HORAS</em><h1>Alimentación y Locutorio</h1><p>Food & Beverage y servicios de locutorio en Madrid.</p><a class="button" href="https://wa.me/34602470301" target="_blank">Contactar por WhatsApp</a></div></section>
+
+<section class="products" id="productos">
+<h2>ALIMENTOS Y BEBIDAS</h2><p class="sub">Descubre nuestra variedad de productos</p>
+<div class="categories">
+<button class="category active" data-category="drinks">🥤 <b>BEBIDAS FRÍAS<small>18 productos</small></b></button>
+<button class="category" data-category="snacks">🍟 <b>CHIPS Y SNACKS<small>12 productos</small></b></button>
+<button class="category" data-category="alcohol">🍷 <b>ALCOHOL<small>10 productos · 18+</small></b></button>
 </div>
-<div id="gallery" class="gallery" hidden>
-<div class="gallery-head"><div><span class="eyebrow">PRODUCTOS</span><h3 id="galleryTitle"></h3></div><button id="closeGallery" class="close-btn" aria-label="Cerrar">×</button></div>
-<div id="galleryItems" class="gallery-grid"></div>
-</div>
-<p class="legal-note">Venta de alcohol exclusivamente a mayores de 18 años y conforme a la normativa aplicable.</p>
+<div id="productArea"></div>
 </section>
 
-<section class="section dark">
-<div><span class="eyebrow">VISÍTANOS</span><h2>Estamos en Lavapiés</h2><p>Calle Lavapiés 5, Madrid, España</p><a class="btn primary" href="https://www.google.com/maps/search/?api=1&query=Calle+Lavapi%C3%A9s+5%2C+Madrid%2C+Spain" target="_blank">Abrir Google Maps</a></div>
-<div class="hours"><span>HORARIO</span><strong>24 horas · Todos los días</strong></div>
-</section>
-
-<section class="section contact">
-<h2>Contacta con nosotros</h2><p>¿Necesitas información? Llámanos o escríbenos por WhatsApp.</p>
-<a class="phone" href="tel:+34602470301">+34 602 470 301</a>
-<div class="buttons"><a class="btn primary" href="tel:+34602470301">Llamar ahora</a><a class="btn whatsapp" href="https://wa.me/34602470301" target="_blank">Escribir por WhatsApp</a></div>
-</section>
-</main>
-<footer><p>© 2026 Alimentación y Locutorio · Madrid</p><p>Calle Lavapiés 5 · Abierto 24 horas</p></footer>
+<section class="dark" id="ubicacion"><h2>VISÍTANOS</h2><p>📍 Calle Lavapiés 5, Madrid, España</p><a class="button" href="https://www.google.com/maps/search/?api=1&query=Calle+Lavapi%C3%A9s+5%2C+Madrid" target="_blank">Abrir Google Maps</a></section>
+<section class="contact" id="contacto"><h2>CONTACTA CON NOSOTROS</h2><p>+34 602 470 301</p><a class="button" href="https://wa.me/34602470301" target="_blank">💬 WhatsApp</a></section>
+<footer>© 2026 Alimentación y Locutorio · Madrid</footer>
 <script src="script.js"></script>
 </body></html>
